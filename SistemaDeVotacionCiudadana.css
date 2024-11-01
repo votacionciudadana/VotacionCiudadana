@@ -56,18 +56,18 @@ nav {
     gap: 15px;
 }
 
-.menu-icon, .user-icon, .search-icon {
+.menu-icon, .search-icon {
     font-style: normal;
     font-size: 24px;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .Logo {
-    width: 150px;
+    width: 300px;
     height: auto;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 25px;
+    border-radius: 20px;
     
 }
 
