@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", "Arial", sans-serif;;
+    font-family: "Roboto", "Arial", sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,10 +20,12 @@ header {
     padding: 10px;
     width: 100%;
     text-align: center;
+    overflow:hidden;
 }
 
 nav {
     margin:10px 0;
+    flex-grow :1;
 }
 
 .menu {
@@ -31,10 +33,12 @@ nav {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu li {
     margin: 0 15px;
+    flex: 1;
 }
 
 .menu li a {
@@ -53,14 +57,16 @@ nav {
 
 .icons {
     display: flex;
+    justify-content: space-between;
     gap: 15px;
+    padding: 0 15px;
 }
 
 .menu-icon, .search-icon {
     font-style: normal;
     font-size: 24px;
     cursor: pointer;
-    margin-right: 25px;
+    margin-right: 0px;
 }
 
 .Logo {
