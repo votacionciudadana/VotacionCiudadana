@@ -60,6 +60,7 @@ nav {
     justify-content: space-between;
     gap: 15px;
     padding: 0 15px;
+    flex-wrap: wrap;
 }
 
 .menu-icon, .search-icon {
@@ -197,5 +198,14 @@ footer {
         flex: none; 
         margin: 5px; 
         }
-}
+    
+        .menu {
+            flex-wrap: wrap;
+        }
+    
+        .menu li {
+            margin: 5px;
+            flex: none;
+        }
+    }
 
