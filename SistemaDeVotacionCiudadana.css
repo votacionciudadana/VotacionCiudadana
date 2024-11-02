@@ -185,13 +185,18 @@ footer {
 
 @media (max-width: 768px) {
 
+    .Logo {
+        max-width: 150px; /* Ajusta el tamaño del logo para móviles */
+        margin-left: 0; /* Centrar el logo en móviles si es necesario */
+    }
+
     .description {
         margin: 5px;
     }
     .icons {
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: center;
+        gap: 10px; /* Reduce el espacio entre los iconos */ 
     }
 
     .menu-icon, .search-icon {
