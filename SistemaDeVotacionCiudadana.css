@@ -84,7 +84,7 @@ nav {
     line-height: 1.5;
     padding: 25px;
     text-align: justify;
-    margin: 0 1cm;
+    margin:10px;
 }
 
 .description h2 {
@@ -181,3 +181,21 @@ footer {
 .footer-menu li a:hover{
     color: grey;
 }
+
+@media (max-width: 768px) {
+
+    .description {
+        margin: 5px;
+    }
+    .icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .menu-icon, .search-icon {
+        flex: none; 
+        margin: 5px; 
+        }
+}
+
