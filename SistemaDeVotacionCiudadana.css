@@ -191,8 +191,8 @@ footer {
 
     .Logo {
         order:1;
-        max-width: 150px; /* Ajusta el tamaño del logo para móviles */
-        margin: 0 auto 10px; /* Centra el logo horizontalmente y agrega espacio debajo */
+        max-width: 250px; /* Ajusta el tamaño del logo para móviles */
+        margin: 0 auto 2px; /* Centra el logo horizontalmente y agrega espacio debajo */
     }
 
     .icons {
