@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; /* Asegúrate de que el tamaño de los elementos se calcule correctamente */
+    box-sizing: border-box;
 }
 
 body {
@@ -191,29 +191,29 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Coloca los elementos del header en columna */
-        align-items: center; /* Centra los elementos del header */
+        flex-direction: column;
+        align-items: center;
     }
+
     .description {
-        margin: 10px; /* Ajusta el margen para dispositivos móviles */
-        padding: 15px; /* Ajusta el relleno si es necesario */
-        font-size: 14px; /* Opcional: reduce el tamaño de la fuente para móviles */
-        width: 100%; /* Asegúrate de que ocupe todo el ancho del contenedor */
-        box-sizing: border-box; /* Incluye padding en el ancho total */
+        margin: 10px;
+        padding: 15px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
     }
-}
 
     .Logo {
         order:1;
-        max-width: 250px; /* Ajusta el tamaño del logo para móviles */
-        margin: 5 px 0; /* Centra el logo horizontalmente y agrega espacio debajo */
+        max-width: 250px;
+        margin: 5 px 0;
     }
 
     .icons {
-        order: 3; /* Mueve los iconos después del menú */
-        width: 100%; /* Ocupa todo el ancho */
-        justify-content: center; /* Centra los iconos */
-        margin: 5px 0; /* Agrega un poco de espacio encima */
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
     }
 
     nav {
@@ -224,13 +224,13 @@ footer {
 
     .menu {
         flex-wrap: wrap;
-        justify-content: center; /* Centra el menú */
-        width: 100%; /* Asegúrate de que el menú ocupe todo el ancho */
+        justify-content: center;
+        width: 100%;
     }
 
     .menu li {
         margin: 5px;
-        flex: none; /* Asegúrate de que los elementos del menú no se extiendan más allá */
+        flex: none;
     }
 
     .menu-icon, .search-icon {
@@ -239,6 +239,6 @@ footer {
     }
 
     footer {
-        width: 100%; /* Asegúrate de que el footer ocupe todo el ancho */
+        width: 100%;
     }
-
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma de Votación Ciudadana para fomentar la participación directa y la transparencia en el proceso político.">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Plataforma de Votación Ciudadana</title>
     <link rel="icon" href="https://cdn-icons-png.freepik.com/128/802/802235.png" type="image/x-icon">
@@ -138,6 +139,7 @@
                     </section>
     </main>
     <footer>
+    <nav aria-label="Footer menu">
     <ul class="footer-menu">
         <li><a href="ayuda.html">Ayuda</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -145,6 +147,7 @@
         <li><a href="terminos.html">Términos y Condiciones</a></li>
         <li><a href="faq.html">Preguntas Frecuentes</a></li>
     </ul>
+    </nav>
     <p>&copy; 2024 Plataforma de Votación Ciudadana. Todos los derechos reservados.</p>
     </footer>
     <br>
@@ -152,7 +155,7 @@
     <script>
         let currentSlide = 0;
 
-function changeSlide(direction) {
+    function changeSlide(direction) {
     const slides = document.querySelectorAll('.slide');
     slides[currentSlide].classList.remove('active');
     
@@ -163,8 +166,7 @@ function changeSlide(direction) {
     slider.style.transform = `translateX(-${currentSlide * 100}%)`; // Mueve el slider
 }
 
-// Configura un intervalo para que cambie automáticamente cada 5 segundos (opcional)
-setInterval(() => changeSlide(1), 5000);
+    setInterval(() => changeSlide(1), 5000);
     </script>
 </body>
 </html>
