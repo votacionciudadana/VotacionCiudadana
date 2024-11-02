@@ -57,7 +57,7 @@ nav {
 
 .icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 15px;
     padding: 0 15px;
     flex-wrap: wrap;
@@ -184,33 +184,46 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca los elementos del header en columna */
+        align-items: center; /* Centra los elementos del header */
+    }
 
     .Logo {
+        order:1;
         max-width: 150px; /* Ajusta el tamaño del logo para móviles */
-        margin-left: 0; /* Centrar el logo en móviles si es necesario */
+        margin: 0 auto 10px; /* Centra el logo horizontalmente y agrega espacio debajo */
     }
 
-    .description {
-        margin: 5px;
-    }
     .icons {
+        order: 3; /* Mueve los iconos después del menú */
+        width: 100%; /* Ocupa todo el ancho */
+        justify-content: center; /* Centra los iconos */
+        margin-top: 10px; /* Agrega un poco de espacio encima */
+    }
+
+    nav {
+        order: 2;
+        width: 100%; /* Asegúrate de que el menú nav ocupe todo el ancho */
+    }
+
+    .menu {
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px; /* Reduce el espacio entre los iconos */ 
+        justify-content: center; /* Centra el menú */
+        width: 100%; /* Asegúrate de que el menú ocupe todo el ancho */
+    }
+
+    .menu li {
+        margin: 5px;
+        flex: none; /* Asegúrate de que los elementos del menú no se extiendan más allá */
     }
 
     .menu-icon, .search-icon {
-        flex: none; 
-        margin: 5px; 
-        }
-    
-        .menu {
-            flex-wrap: wrap;
-        }
-    
-        .menu li {
-            margin: 5px;
-            flex: none;
-        }
+        flex: none;
+        margin: 5px;
     }
 
+    footer {
+        width: 100%; /* Asegúrate de que el footer ocupe todo el ancho */
+    }
+}
