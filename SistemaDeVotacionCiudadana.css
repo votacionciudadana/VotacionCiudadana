@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; /* Asegúrate de que el tamaño de los elementos se calcule correctamente */
+}
+
 body {
     font-family: "Roboto", "Arial", sans-serif;
     margin: 0;
@@ -160,6 +164,7 @@ footer {
     color: #fff;
     width: 100%;
     margin-top: auto;
+    overflow: hidden;
 }
 
 .footer-menu {
