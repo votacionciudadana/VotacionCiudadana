@@ -315,55 +315,60 @@ footer {
     color: grey;
 }
 
-@media (max-width: 980px) {
-    header {
+@media (max-width: 768px) {
+    /* Cambiar main a diseño en columna */
+    main {
         flex-direction: column;
-        align-items: center;
+        padding: 10px;
     }
 
+    /* Ajuste para las tarjetas (article-card) */
+    .article-card {
+        max-width: 100%; /* Que ocupe todo el ancho */
+        margin: 10px 0; /* Separación vertical */
+    }
+
+    /* Imágenes más pequeñas dentro de las tarjetas */
+    .image-overlay img {
+        height: 150px; /* Reducir altura */
+    }
+
+    .overlay {
+        font-size: 14px; /* Ajustar el tamaño del texto */
+        padding: 5px 0;
+    }
+
+    /* Ajuste de texto en la descripción */
     .description {
-        margin: 10px;
-        padding: 15px;
-        font-size: 14px;
-        width: 100%;
+        font-size: 14px; /* Reducir texto */
+        padding: 10px;
     }
 
-    .Logo {
-        order:1;
-        max-width: 250px;
-        margin: 5px 0;
-    }
-
-    .icons {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        margin: 5px 0;
-    }
-
-    nav {
-        order: 2;
-        width: 100%;
-        margin: 5px 0;
-    }
-
+    /* Ajustes para el menú */
     .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .menu li {
-        margin: 5px;
-        flex: none;
+        margin: 5px 0;
     }
 
-    .menu-icon, .search-icon {
-        flex: none;
-        margin: 5px;
+    /* Ajuste de íconos */
+    .icons {
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
+    /* Botones de navegación del slider */
+    button.prev, button.next {
+        top: 45%; /* Ajustar posición */
+        padding: 8px; /* Reducir tamaño */
+    }
+
+    /* Footer optimizado */
     footer {
-        width: 100%;
+        font-size: 12px;
+        padding: 8px;
     }
 }
