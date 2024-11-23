@@ -317,7 +317,7 @@ footer {
 
 @media (max-width: 768px) {
 
-    .site-header {
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -325,7 +325,7 @@ footer {
         background-color: #333; /* Color de fondo */
         color: #fff; /* Color de texto */
     }
-    
+
     /* Cambiar main a diseño en columna */
     main {
         flex-direction: column;
